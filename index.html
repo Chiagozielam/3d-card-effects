@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Card Flppping Effect</title>
+    <link rel="stylesheet" href="materialize.min.css">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="style2.css">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">        
+    <script src="materialize.min.js"></script>
+</head>
+<body>
+    <nav class="navbar-fixed blue lighten-3" id="nav-box">
+        <div class="nav-wrapper container">
+            <h5 class="flow-text"><a href="#" class="brand-logo" id="nav-logo">Card Flipping Effect</a></h5> 
+        </div>
+    </nav>
+    <div class="space"></div> 
+    <div class="row container">
+        <div class="col s10 m6 l4">
+            <div class="login-card">
+                <div class="card login-front" id="flip-card">
+                        <img src="laptop.jpg" class="responsive-img" alt="">
+                        <p ><h5 class="container">Login</h5></p>
+                </div>
+                <div class="login-back" id="flip-card">
+                    <p class="center" style="font-size:px;"><i class="material-icons white-text">account_circle</i></p>
+                    <form action="">
+                        <input type="email" name="email" id="" placeholder="E-mail">
+                        <input type="password" name="password" id="" placeholder="Password">
+                        <p class="center"><button class="btn circle white-text btn-floating"><i class="material-icons">settings_power</i></button></p>
+                    </form>
+                </div>  
+                <div class="card-filler hide-on-med-and-up"></div> 
+            </div>
+        </div>
+
+        <div class="col s10 m6 l4">
+            <div class="register-card">
+                <div class="card register-front" id="flip-card">
+                    <img src="africa.jpg" class="responsive-img" alt="">
+                    <p ><h5 class="container">Register</h5></p>
+                </div>
+                <div class="card register-back container" id="flip-card">
+                    
+                        <div class="row">
+                            <div class="col s6 m6 l6">
+                                <input type="email" name="text" id="" placeholder="Name" class="reg-input center">
+                                <input type="email" name="email" id="" placeholder="E-mail" class="reg-input center">
+                            </div>
+
+                            <div class="col s6 m6 l6">
+                                <input type="text" name="password" id="" placeholder="Username" class="reg-input center">
+                                <input type="datetime" name="date" id="" placeholder="Username" class="reg-input center">
+                            </div>
+                            <input type="password" name="password" id="" placeholder="Password" class="reg-input center">
+                            <input type="password" name="password" id="" placeholder="Confirm Password" class="reg-input center">
+                            <p class="center"><button class="btn circle white-text btn-floating"><i class="material-icons">dashboard</i></button></p>
+                        </div>
+
+                        
+                </div>
+                <div class="card-filler hide-on-med-and-up"></div>    
+            </div>
+        </div>
+
+            <div class="col s10 m6 l4">
+                <div class="subscribe-card">
+                    <div class="card subscribe-front" id="flip-card">
+                        <img src="coffee.jpg" class="responsive-img" alt="">
+                        <p ><h5 class="container">Subscribe</h5></p>
+                    </div>
+                    <div class="card subscribe-back" id="flip-card">
+                        <div class="row">
+                            <div class="col s4 m4 l4">
+                                    <p class="center"><button class="btn circle white-text btn-floating"><i class="material-icons">adb</i></button></p>
+                                    <p class="center">
+                                        join millions of others and receive current updates directly to your mail box
+                                    </p>
+                            </div>
+                            <div class="col s8 m8 l8 center">
+                                <img src="network.jpg" class="responsive-img" alt="">
+                                <input type="email" name="email" id="sub-email" placeholder="E-mail" class="center">
+                                <p class=""><button class="btn white-text yellow">Subscribe</button></p>
+                            </div>
+                        </div>
+                    </div>   
+                </div>
+
+                <div class="space hide-on-med-and-up"></div> 
+            </div>
+    </div>
+
+
+    <a id="menu" class="waves-effect waves-light btn btn-floating feat-dis blue lighten-3" ><i class="material-icons">fingerprint</i></a>    
+      <!-- Tap Target Structure -->
+      <div class="tap-target" data-target="menu">
+        <div class="tap-target-content">
+          <h5>Title</h5>
+          <p>A bunch of text</p>
+        </div>
+      </div>
+
+    <footer class="grey darken-3" id="footer">
+        <p class="container pink-text">&copy Daniel Don | 2018</p>
+    </footer>
+</body>
+</html>
+

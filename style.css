@@ -1,0 +1,145 @@
+#nav-logo{
+    padding-top: 5%;
+    line-height: 50px;
+}
+#nav-box{
+    margin-top: -1.5%;
+    height: 30%;
+}
+#flip-card{
+    height: 350px;
+}
+.card-filler{
+    height: 400px;
+}
+.space{
+    height: 100px;
+}
+/*------THIS IS FOR THE LOGIN CARD-------*/
+.login-card{
+    transform-style: preserve-3d;
+    perspective: 600px;
+    transition: all 0.5s;
+}
+
+.login-card .login-front{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    backface-visibility: hidden;
+    transform: rotateX(0deg);
+    transition: all 0.5s;    
+}
+.login-card:hover .login-front{
+    transform: rotateX(-180deg);
+}
+
+.login-card .login-back{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    backface-visibility: hidden;
+    transform: rotateX(180deg);
+    background-color: rgb(71, 69, 69);
+    color: blue;
+    transition: all 0.5s;    
+}
+
+.login-card:hover .login-back{
+    transform: rotateX(0deg);
+}
+
+/*------THIS IS FOR THE REGISTER CARD-------*/
+
+.register-card{
+    transform-style: preserve-3d;
+    perspective: 600px;
+    transition: all 0.5s;
+}
+
+.register-card .register-front{
+    top: 0;
+    left: 0;
+    position: absolute;
+    transition: 1s;
+    backface-visibility: hidden;
+    transform: rotateX(0deg);    
+}
+
+.register-card .register-back{
+    top: 0;
+    left: 0;
+    position: absolute;
+    width: 100%;
+    transition: 1s;
+    backface-visibility: hidden;
+    transform: rotateX(180deg);
+    background-color: rgb(5, 5, 172);    
+}
+
+.register-card:hover .register-front{
+    transform: rotateY(-540deg);
+}
+.register-card:hover .register-back{
+    transform: rotateY(0deg);
+}
+
+/*------THIS IS FOR THE REGISTER CARD-------*/
+.subscribe-card{
+    transform-style: preserve-3d;
+    perspective: 550px;
+}
+.subscribe-card .subscribe-front{
+    position: absolute;
+    width: 100%;
+    transition: all 2s;
+    backface-visibility: hidden;
+    transform: rotateX(0deg);
+}
+.subscribe-card .subscribe-back{
+    position: absolute;
+    width: 100%;
+    transition: all 2s;
+    backface-visibility: hidden;
+    transform: rotateX(180deg);
+}
+.subscribe-card:hover .subscribe-front{
+    transform: rotateY(-1260deg);
+}
+.subscribe-card:hover .subscribe-back{
+    transform: rotateX(720deg);
+}
+
+input{
+    color: white;
+}
+input.reg-input{
+    line-height: 0.5 !important;
+    width: 90% !important;
+    margin-top: -5%;
+}
+input#sub-email{
+    border: 1px solid black;
+    border: none;
+    width: 95%;
+    background-color: rgba(243, 83, 20, 0.1);
+    margin-top: 10%;
+}
+
+.feat-dis{
+    position: fixed;
+    margin-top: 30vh;
+    margin-left: 90vw;
+}
+
+#footer{
+    margin-top: 98vh;
+    padding-top: 1%;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 18px;
+    height: 50px;
+}
